@@ -2,8 +2,6 @@
 
 A customer-support triage agent. It answers order questions, does basic arithmetic, and files refunds, but it will not let a refund over $50 go through without a human saying yes first.
 
-The idea for the human-approval gate came from a post I saw at https://www.instagram.com/p/DdZQsecgKqv/?img_index=7&stkn=ZHkweDQyYWJwNXg=.
-
 ## What it does
 
 The agent is a small state graph with one model node, one tool node, an approval node, and a loop guard. The model can call three tools:
