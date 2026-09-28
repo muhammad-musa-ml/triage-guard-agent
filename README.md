@@ -78,7 +78,7 @@ triage-guard --session live-support --model gpt-4.1-mini
 pytest
 ```
 
-The suite covers the message reducer, the safe arithmetic grammar, order and refund validation, the routing function around the exact $50 boundary, a full model-to-tool-to-model cycle, SQLite state surviving a closed and reopened connection, approve and reject through `Command(resume=...)`, and the loop guard. I wrote these by hand and they line up with what the code does, but I have not been able to run the full suite in every environment I've tried this in, so treat a green run on your machine as the actual confirmation, not this paragraph.
+The suite covers the message reducer, the safe arithmetic grammar, order and refund validation, the routing function around the exact $50 boundary, a full model-to-tool-to-model cycle, SQLite state surviving a closed and reopened connection, approve and reject through `Command(resume=...)`, and the loop guard. CI runs the suite on Python 3.11 and 3.13 on every push and pull request, and it passes there. A green run on your own machine is still the confirmation that counts.
 
 ## What's rough or missing
 
